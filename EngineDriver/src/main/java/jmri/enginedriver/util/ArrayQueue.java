@@ -100,6 +100,11 @@ public final class ArrayQueue {
     }
 
     // empty the queue
+    // Test only: adds one DefaultLocale lint issue, to show the check failing.
+    public static String lintCheckTest(String s) {
+        return s.toUpperCase();
+    }
+
     public void emptyQueue() {
         front = 0;
         rear = 0;
